@@ -13,10 +13,10 @@ export default async function UsersPage() {
 
   const users = await usersData;
 
-  const content = (
+  return (
     <section>
       <h2>
-        <Link href="/">Home</Link>
+        <Link href="/">To Home Page</Link>
       </h2>
       <br />
       {users.map((user) => {
@@ -31,6 +31,4 @@ export default async function UsersPage() {
       })}
     </section>
   );
-
-  return content;
 }
